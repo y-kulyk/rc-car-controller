@@ -8,12 +8,12 @@ basic.forever(function () {
     } else {
         led.plot(2, 4)
         led.unplot(2, 0)
-        if (input.acceleration(Dimension.X) >= 0) {
-            led.plot(4, 2)
-            led.unplot(0, 2)
-        } else {
-            led.plot(0, 2)
-            led.unplot(4, 2)
-        }
+    }
+    if (input.acceleration(Dimension.X) >= 0) {
+        led.plot(4, 2)
+        led.unplot(0, 2)
+    } else {
+        led.plot(0, 2)
+        led.unplot(4, 2)
     }
 })
